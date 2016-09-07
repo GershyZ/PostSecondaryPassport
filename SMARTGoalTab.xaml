@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="PostSecondaryPassport.SMARTGoalTab">
+	<ContentPage.Padding>
+		<OnPlatform x:TypeArguments="Thickness" iOS="0,20,0,0" />
+	</ContentPage.Padding>
+	<ContentPage.Content>
+		<StackLayout Orientation="Vertical" HorizontalOptions="Fill" VerticalOptions="Center" BackgroundColor="{StaticResource primaryColor}">
+			<StackLayout x:Name="top" Orientation="Vertical" VerticalOptions="Start" HorizontalOptions="Fill">
+				<Label x:Name="section_name" HorizontalOptions="Center" FontSize="24" FontAttributes="Bold" />
+				<Label x:Name="section_description" HorizontalOptions="Center" FontSize="16" FontAttributes="Italic" />
+			</StackLayout>
+			<StackLayout x:Name="pageContent" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Padding="25">
+			</StackLayout>
+			<StackLayout x:Name="sl_bottom" VerticalOptions="End" HorizontalOptions="FillAndExpand">
+			</StackLayout>
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>

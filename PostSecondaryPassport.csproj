@@ -1,0 +1,121 @@
+﻿<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{164F9643-66EE-4AF3-A7FA-EF50F7E911D9}</ProjectGuid>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <UseMSBuildEngine>true</UseMSBuildEngine>
+    <OutputType>Library</OutputType>
+    <RootNamespace>PostSecondaryPassport</RootNamespace>
+    <AssemblyName>PostSecondaryPassport</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Profile78</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="App.xaml" />
+    <EmbeddedResource Include="PostSecondaryPassportPage.xaml" />
+    <EmbeddedResource Include="LevelPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LevelContent.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SMARTGoalTab.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BonusFormBuilder.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PostSecondaryPassportPage.xaml.cs">
+      <DependentUpon>PostSecondaryPassportPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="LevelPage.xaml.cs">
+      <DependentUpon>LevelPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LevelContent.xaml.cs">
+      <DependentUpon>LevelContent.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BearTrack.cs" />
+    <Compile Include="LevelUpPage.cs" />
+    <Compile Include="Node.cs" />
+    <Compile Include="BonusLevelPage.cs" />
+    <Compile Include="Route.cs" />
+    <Compile Include="BonusGoalForm.cs" />
+    <Compile Include="HCVRoute.cs" />
+    <Compile Include="SchoolYearPage.cs" />
+    <Compile Include="YearSectionPage.cs" />
+    <Compile Include="VolunteerPage.cs" />
+    <Compile Include="SMARTGoalForm.cs" />
+    <Compile Include="SMARTGoalTab.xaml.cs">
+      <DependentUpon>SMARTGoalTab.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SMARTGoalTemplate.cs" />
+    <Compile Include="SMARTGoalPage.cs" />
+    <Compile Include="CourseForm.cs" />
+    <Compile Include="VolunteerForm.cs" />
+    <Compile Include="SATForm.cs" />
+    <Compile Include="BonusFormBuilder.xaml.cs">
+      <DependentUpon>BonusFormBuilder.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseModels\LevelTable.cs" />
+    <Compile Include="DatabaseModels\ChallengeTable.cs" />
+    <Compile Include="DatabaseModels\RouteContentTable.cs" />
+    <Compile Include="DatabaseModels\RouteTable.cs" />
+    <Compile Include="DatabaseModels\StudentContentData.cs" />
+    <Compile Include="DatabaseModels\StudentChallengeData.cs" />
+    <Compile Include="SimpleTestRoutes.cs" />
+    <Compile Include="DatabaseModels\DBPSP.cs" />
+    <Compile Include="DatabaseModels\ISQLite.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Xamarin.Forms.Core">
+      <HintPath>..\packages\Xamarin.Forms.2.3.1.114\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Xaml">
+      <HintPath>..\packages\Xamarin.Forms.2.3.1.114\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.Xaml.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Platform">
+      <HintPath>..\packages\Xamarin.Forms.2.3.1.114\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCL.raw">
+      <HintPath>..\packages\SQLitePCL.raw.0.9.2\lib\portable-net45+netcore45+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\SQLitePCL.raw.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCL.batteries">
+      <HintPath>..\packages\SQLitePCL.bundle_green.0.9.2\lib\portable-net45+netcore45+wpa81+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\SQLitePCL.batteries.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLite-net">
+      <HintPath>..\packages\sqlite-net-pcl.1.1.2\lib\portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\SQLite-net.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DatabaseModels\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+  <Import Project="..\packages\Xamarin.Forms.2.3.1.114\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.3.1.114\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" />
+</Project>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="PostSecondaryPassport.PostSecondaryPassportPage" BackgroundColor="{StaticResource primaryColor}">
+	<ContentPage.Content>
+		<StackLayout Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="Center">
+			<Entry x:Name="uname" Placeholder="Username" />
+			<Entry x:Name="password" IsPassword="true" Placeholder="Password" />
+			<Button x:Name="b_login" Text="Sign in" />
+			<Button x:Name="b_offline" Text="Stay Offline" />
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>

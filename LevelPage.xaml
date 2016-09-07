@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="PostSecondaryPassport.LevelPage">
+	<ContentPage.Padding>
+		<OnPlatform x:TypeArguments="Thickness" iOS="0,20,0,0" />
+	</ContentPage.Padding>
+	<ContentPage.Content>
+		<StackLayout>
+			<StackLayout x:Name="sl_header" Orientation="Vertical" BackgroundColor="{StaticResource primaryColor}">
+				<Label Text="Your Roadmap To Success" FontAttributes="Bold" FontSize="16" HorizontalOptions="Center" />
+				<Label x:Name="lbl_title" FontAttributes="Bold" FontSize="24" HorizontalOptions="Center" />
+			</StackLayout>
+			<StackLayout x:Name="sl_structure" VerticalOptions="FillAndExpand" HorizontalOptions="Fill">
+				<ScrollView Orientation="Vertical" BackgroundColor="#FEFEFEF">
+					<StackLayout x:Name="level_content" HorizontalOptions="FillAndExpand" Spacing="10" Padding="25">
+					</StackLayout>
+				</ScrollView>
+				<StackLayout x:Name="sl_tracks" Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="End">
+				</StackLayout>
+			</StackLayout>
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="PostSecondaryPassport.LevelContent">
+	<ContentView.Content>
+		<StackLayout>
+			<StackLayout x:Name="section_layout" BackgroundColor="{StaticResource primaryColor}" Padding="20">
+				<StackLayout x:Name="section_header" Orientation="Horizontal" VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand">
+					<Label x:Name="section_name" VerticalOptions="Center" FontAttributes="Bold" FontSize="20" />
+					<Image x:Name="section_icon" HorizontalOptions="End" />
+				</StackLayout>
+			</StackLayout>
+		</StackLayout>
+	</ContentView.Content>
+</ContentView>

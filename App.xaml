@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="PostSecondaryPassport.App">
+	<Application.Resources>
+		<ResourceDictionary>
+			<Color x:Key="primaryColor">#5d518d</Color>
+			<Color x:Key="secondaryColor">#d7e05e</Color>
+			<Style TargetType="Entry">
+				<Setter Property="BackgroundColor" Value="{StaticResource secondaryColor}" />
+				<Setter Property="TextColor" Value="{StaticResource primaryColor}" />
+				<Setter Property="FontAttributes" Value="Bold" />
+				<Setter Property="FontSize" Value="16" />
+			</Style>
+			<Style TargetType="Picker">
+				<Setter Property="BackgroundColor" Value="{StaticResource secondaryColor}" />
+			</Style>
+			<Style TargetType="DatePicker">
+				<Setter Property="BackgroundColor" Value="{StaticResource secondaryColor}" />
+			</Style>
+			<Style TargetType="Label">
+				<Setter Property="BackgroundColor" Value="{StaticResource primaryColor}" />
+				<Setter Property="TextColor" Value="{StaticResource secondaryColor}" />
+				<Setter Property="FontAttributes" Value="Bold" />
+				<Setter Property="FontSize" Value="16" />
+				<Setter Property="VerticalOptions" Value="Center" />
+			</Style>
+			<Style TargetType="Button">
+				<Setter Property="BackgroundColor" Value="{StaticResource secondaryColor}" />
+				<Setter Property="TextColor" Value="{StaticResource primaryColor}" />
+				<Setter Property="FontSize" Value="18" />
+				<Setter Property="FontAttributes" Value="Bold" />
+			</Style>
+		</ResourceDictionary>
+	</Application.Resources>
+</Application>
